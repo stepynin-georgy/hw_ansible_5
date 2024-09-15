@@ -43,7 +43,7 @@ platforms:
 
 5. Запустите тестирование роли повторно и проверьте, что оно прошло успешно.
 
-<details><summary>Запуск `molecole test` с verify.yml</summary>
+<details><summary>Запуск molecule test с verify.yml</summary>
 
 ```
 (venv) root@ansible-ubuntu:/opt/hw_ansible_4/playbook/roles/vector-role# molecule test
