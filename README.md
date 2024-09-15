@@ -1542,10 +1542,6 @@ commands =
     {posargs:molecule test -s default --destroy always}
 ```
 
-8. Запустите команду `tox`. Убедитесь, что всё отработало успешно.
-
-<details><summary>Запуск tox с облегченным сценарием тестирования</summary>
-
 ```
 (venv) root@ansible-ubuntu:/opt/hw_ansible_4/playbook/roles/vector-role# molecule matrix test
 WARNING  The scenario config file ('/opt/hw_ansible_4/playbook/roles/vector-role/molecule/default/molecule.yml') has been modified since the scenario was created. If recent changes are important, reset the scenario with 'molecule destroy' to clean up created items or 'molecule reset' to clear current configuration.
@@ -1563,12 +1559,13 @@ default:
   - destroy
 
 (venv) root@ansible-ubuntu:/opt/hw_ansible_4/playbook/roles/vector-role#
+```
 
+8. Запустите команду `tox`. Убедитесь, что всё отработало успешно.
 
+<details><summary>Запуск tox с облегченным сценарием тестирования</summary>
 
-
-
-
+```
 (venv) root@ansible-ubuntu:/opt/hw_ansible_4/playbook/roles/vector-role# tox -r
 py39-ansible210: remove tox env folder /opt/hw_ansible_4/playbook/roles/vector-role/.tox/py39-ansible210
 py39-ansible210: install_deps> python -I -m pip install 'ansible<2.12' -r tox-requirements.txt
